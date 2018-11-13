@@ -3,3 +3,4 @@ rmmod simple        // Rimuove il modulo simple
 lsmod               // Mostra una lista dei moduli caricati
 cat /proc/devices   // Mostra i driver dei moduli caricati con il loro major number
 mknod /dev/simple <type> <major> <minor> // Crea un device e gli assegna un driver tramite major number | type indica il tipo di device ad es.: c -> char device
+rm /dev/simple      // Rimuove lo special file usato per rieferirsi al device
